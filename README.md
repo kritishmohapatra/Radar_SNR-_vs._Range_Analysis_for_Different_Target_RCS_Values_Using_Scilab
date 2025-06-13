@@ -25,25 +25,29 @@ The main components taken into account in this simulation include:
 
 ## 🟣 Main Calculations
 
-The radar SNR is computed by the following formula:
+The radar SNR as a function of range \( r \) is defined by:
 
-\[
+$$
 SNR(r) = \frac{ P_t \cdot G_t \cdot G_r \cdot \lambda^2 \cdot \sigma \cdot \ tau }{ (4\pi)^3 \cdot k \cdot T_s \cdot F \cdot L \cdot r^4 }
-\]
+$$
 
 Where:
-- \( P_t \) is peak transmit power
-- \( G_t \), \( G_r \) are antenna gains
-- \( \lambda \) is the radar's operating wavelength
-- \( \sigma \) is the radar cross-section of the target
-- \( \ tau \) is pulse duration
-- \( k \) is the Boltmann constant
-- \( T_s \) is system temperature
-- \( F \) is the noise figure
-- \( L \) is total losses
-- \( r \) is range to the target
 
+|          | Meaning |
+|---------|---------|
+| \( P_t \) | Transmitter power |
+| \( G_t \), \( G_r \) | Transmitter and receiver antenna gains |
+| \( \lambda \) | Wavelength |
+| \( \sigma \) | Target radar cross-section |
+| \( T \) | Integrator or pulse duration |
+| \( k \) | Boltzmann's constant |
+| \( T_s \) | System temperature |
+| \( F \) | Noise figure |
+| \( L \) | Loss |
+| \( R \) | Distance to target |
+  
 ---
+--
 
 ## 🟣 Values Used in this Script:
 
